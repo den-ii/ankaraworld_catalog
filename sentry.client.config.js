@@ -1,5 +1,3 @@
-import '@/styles/global.css'
-import type { AppProps } from 'next/app'
 import * as Sentry from '@sentry/nextjs'
 
 Sentry.init({
@@ -10,7 +8,3 @@ Sentry.init({
   // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
 })
-
-export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
