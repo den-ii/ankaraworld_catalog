@@ -7,6 +7,7 @@ const FooterContainer = styled.footer`
   padding-top: 4rem;
   padding-bottom: 3rem;
   background-color: #f1f0f0;
+
   /* background-color: #2a2929; */
 
   .footer-logo {
@@ -53,6 +54,7 @@ const FooterContainer = styled.footer`
       display: flex;
       width: 570px;
       margin: 1rem auto;
+      align-items: center;
     }
     .footer-links {
       display: flex;
@@ -86,22 +88,22 @@ const Footer = () => {
             <NavLink href="/" className="footer-link">
               Home
             </NavLink>
-            <NavLink href="/" className="footer-link">
+            <NavLink href="/collection" className="footer-link">
               Collection
             </NavLink>
           </div>
           <div className="footer-links">
-            <NavLink href="/" className="footer-link">
+            <NavLink href="/about" className="footer-link">
               About
             </NavLink>
-            <NavLink href="/" className="footer-link">
+            <NavLink href="/contact" className="footer-link">
               Contact Us
             </NavLink>
           </div>
         </div>
       </div>
       <div className="footer-socials__links">
-        <a href="#">
+        <a href="https://facebook.com/" target="_blank" rel="noreferrer">
           <Image
             className="footer-socials"
             src="/assets/facebook.svg"
@@ -110,22 +112,30 @@ const Footer = () => {
             alt="facebook"
           />
         </a>
-        <a href="#">
+        <a
+          href="https://instagram.com/ankaraworld__"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="footer-socials"
             src="/assets/instagram.svg"
             width={15}
             height={15}
-            alt="facebook"
+            alt="instagram"
           />
         </a>
-        <a href="#">
+        <a
+          href="https://twitter.com/world_ankara"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="footer-socials"
             src="/assets/twitter.svg"
             width={15}
             height={15}
-            alt="facebook"
+            alt="twitter"
           />
         </a>
       </div>

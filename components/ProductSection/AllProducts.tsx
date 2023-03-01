@@ -1,54 +1,38 @@
-import React from 'react'
 import { GridPart } from './GridPart'
-import Image from 'next/image'
+import { home } from '../../data/home'
+import { SeeMore } from './SeeMore'
+import { Product } from './Product'
+import { ProductContainer } from './ProductContainer'
 
 const AllProducts = () => {
+  const products = home
+    .map((product) => {
+      return (
+        <Product
+          key={product.id}
+          id={product.id}
+          name={product.prod_name}
+          image={product.image}
+          bottom={product.bottom}
+        />
+      )
+    })
+    .slice(0, 5)
   return (
-    <GridPart>
-      <div>
-        <div className="product-img__container">
-          <Image
-            src="/assets/amaka.jpg"
-            fill
-            className="product-img img"
-            alt="all products"
-          />
-        </div>
-
-        <p>ADUNNI BAG</p>
+    <ProductContainer>
+      <div className="lg">
+        <GridPart>{products}</GridPart>
+        <SeeMore clink="/collection/all" />
       </div>
-      <div>
-        <div className="product-img__container">
-          <Image
-            src="/assets/flores.jpg"
-            fill
-            className="product-img img"
-            alt="all products"
-          />
-        </div>
-
-        <p>ADUNNI BAG</p>
+      <div className="md">
+        <GridPart>{products.slice(0, 4)}</GridPart>
+        <SeeMore clink="/collection/all" />
       </div>
-      <div>
-        <div className="product-img__container">
-          <Image
-            src="/assets/amaka.jpg"
-            fill
-            className="product-img img"
-            alt="all products"
-          />
-        </div>
-
-        <p>ADUNNI BAG</p>
+      <div className="sm">
+        <GridPart>{products.slice(0, 3)}</GridPart>
+        <SeeMore clink="/collection/all" />
       </div>
-
-      {/* <div>
-        <Image src="/assets/adunni_bag.jpg" fill alt="all products" />
-      </div>
-      <div>
-        <Image src="/assets/adunni_bag.jpg" fill alt="all products" />
-      </div> */}
-    </GridPart>
+    </ProductContainer>
   )
 }
 

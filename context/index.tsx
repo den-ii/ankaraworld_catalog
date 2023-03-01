@@ -1,26 +1,62 @@
-import { useState, createContext, Dispatch, SetStateAction } from 'react'
+import { productTypes } from 'data/types'
+import {
+  createContext,
+  Dispatch,
+  SetStateAction,
+  useEffect,
+  useState,
+} from 'react'
 
 interface ContextProps {
   burger: boolean
   setBurger: Dispatch<SetStateAction<boolean>>
+  searchValue: string
+  setSearchValue: Dispatch<SetStateAction<string>>
+  allProducts: productTypes[]
+  nav: boolean
+  setNav: Dispatch<SetStateAction<boolean>>
 }
+
 interface MyContextProps {
   children: React.ReactNode
 }
-const ContextValues = {
+
+const initialContextValues: ContextProps = {
   burger: false,
   setBurger: () => {},
+  searchValue: '',
+  setSearchValue: () => {},
+  allProducts: [],
+  nav: false,
+  setNav: () => {},
 }
 
-const Context = createContext<ContextProps>(ContextValues)
+const Context = createContext<ContextProps>(initialContextValues)
 
 const MyContext = ({ children }: MyContextProps) => {
-  const [burger, setBurger] = useState(false)
-  return (
-    <Context.Provider value={{ burger, setBurger }}>
-      {children}
-    </Context.Provider>
-  )
+  const [burger, setBurger] = useState<boolean>(false)
+  const [nav, setNav] = useState<boolean>(false)
+  const [searchValue, setSearchValue] = useState<string>('')
+  const [allProducts, setAllProducts] = useState<productTypes[]>([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/products.json')
+      .then((res) => res.json())
+      .then((data) => setAllProducts(data))
+  }, [])
+  console.log(allProducts)
+
+  const contextValues: ContextProps = {
+    burger,
+    setBurger,
+    searchValue,
+    setSearchValue,
+    allProducts,
+    nav,
+    setNav,
+  }
+
+  return <Context.Provider value={contextValues}>{children}</Context.Provider>
 }
 
 export { Context, MyContext }

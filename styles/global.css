@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 :root {
   --secondary: #e3471d;
   /*  --primary: #050a30; */
@@ -30,10 +30,13 @@ footer {
   padding: 0 1.2rem;
 }
 main {
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 .image {
   position: relative;
+}
+.bottom {
+  object-position: bottom;
 }
 a {
   color: inherit;
@@ -50,16 +53,74 @@ button {
   cursor: pointer;
 }
 img {
-  object-fit: cover;
+  /* border-radius: 9px; */
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+.hero--slideshow__img {
+  border-radius: 10px;
+  width: auto !important;
+  margin: 0 auto;
+}
+.hero--slideshow {
+  position: relative;
+  /* width: 300px; */
+  border-radius: 10px;
+  height: 350px;
+  margin: 0 auto;
+}
+.carousel {
+  border-radius: 10px;
+  box-shadow: none !important;
+}
+.carousel * {
+  box-shadow: none !important;
+}
+.review--slideshow {
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.review {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.sm {
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   header,
   section,
   footer {
     padding: 0 2.5rem;
+  }
+  .review--slideshow {
+    display: flex;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .review {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  .sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .review {
+    position: relative;
+    width: 300px;
+    height: 300px;
   }
 }

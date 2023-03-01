@@ -1,7 +1,5 @@
-// .storybook/preview.js
 import '../styles/global.css'
 import * as NextImage from 'next/image'
-
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -11,7 +9,6 @@ export const parameters = {
     },
   },
 }
-
 const OriginalNextImage = NextImage.default
 
 Object.defineProperty(NextImage, 'default', {
