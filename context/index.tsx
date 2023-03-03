@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { productTypes } from 'data/types'
 import {
   createContext,
@@ -40,11 +41,16 @@ const MyContext = ({ children }: MyContextProps) => {
   const [allProducts, setAllProducts] = useState<productTypes[]>([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/products.json')
-      .then((res) => res.json())
-      .then((data) => setAllProducts(data))
+    req()
   }, [])
-  console.log(allProducts)
+
+  const req = async () => {
+    const response = await axios.get<productTypes[]>(
+      'http://localhost:3000/products.json',
+    )
+    console.log(response.data)
+    setAllProducts(response.data)
+  }
 
   const contextValues: ContextProps = {
     burger,

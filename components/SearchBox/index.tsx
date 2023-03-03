@@ -54,7 +54,6 @@ const SearchBox = ({ val, func }: any) => {
     func('')
   }
 
-  console.log('all', allProducts)
   //   const searchedValue = val
   const searchedFilteredProducts = allProducts
     .filter((products) => {
@@ -108,7 +107,7 @@ const SearchBox = ({ val, func }: any) => {
   return (
     <>
       {length && (
-        <SearchBoxContainer>
+        <SearchBoxContainer data-testid="search-box">
           <div>{searchedSections}</div>
           <div>{searchedProducts}</div>
         </SearchBoxContainer>

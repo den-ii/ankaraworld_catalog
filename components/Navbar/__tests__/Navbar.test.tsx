@@ -1,4 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
+import { MyContext } from '../../../context'
 import Navbar from '../index'
 
 jest.mock('next/router', () => require('next-router-mock'))
@@ -8,6 +9,7 @@ describe('Navbar', () => {
     render(<Navbar />)
     const NavbarLogo = screen.getAllByAltText('logo')
     expect(NavbarLogo[0]).toBeInTheDocument()
+    expect(NavbarLogo[1]).toBeInTheDocument()
   })
   test('Navbar links shows', () => {
     render(<Navbar />)
@@ -27,5 +29,18 @@ describe('Navbar', () => {
     )
     fireEvent.change(searchbar, { target: { value: 'laptop bag' } })
     expect(searchbar).toHaveValue('laptop bag')
+  })
+  test('Should render search box', async () => {
+    render(
+      <MyContext>
+        <Navbar />
+      </MyContext>,
+    )
+    let searchbar = screen.getByPlaceholderText(
+      /Search for products & categories/,
+    )
+    fireEvent.change(searchbar, { target: { value: 'Onape' } })
+    let searchBox = await screen.findByTestId('search-box')
+    expect(searchBox).toBeInTheDocument()
   })
 })

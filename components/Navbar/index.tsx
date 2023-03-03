@@ -15,10 +15,8 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState('')
   const [searched, setSearched] = useState<productTypes[] | []>([])
   const [search, setSearch] = useState(false)
+  const searchInputRef = useRef<HTMLInputElement>(null)
 
-  console.log('searched', searched)
-  console.log(search)
-  console.log('burger', burger)
   useEffect(() => {
     const searching = allProducts.filter((product) => {
       return product.prod_name.toLowerCase().includes(searchValue.toLowerCase())
@@ -36,6 +34,11 @@ const Navbar = () => {
   const handleSearch = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation()
     setSearch(!search)
+    setTimeout(() => {
+      if (searchInputRef && searchInputRef.current) {
+        searchInputRef.current.focus()
+      }
+    }, 500)
   }
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -99,6 +102,7 @@ const Navbar = () => {
                       type="text"
                       className="search-bar"
                       placeholder="Search..."
+                      ref={searchInputRef}
                       onChange={(e) => setSearchValue(e.target.value)}
                       data-testid="mysearch"
                       value={searchValue}

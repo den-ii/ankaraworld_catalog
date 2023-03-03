@@ -13,8 +13,9 @@ export const SeeMoreContainer = styled.div`
     /* border: 1px solid var(--secondary); */
   }
   a:hover {
-    color: var(--primary);
-    background-color: rgba(255, 255, 255, 0.9);
+    color: white;
+    background-color: var(--primary);
+    border: 1px solid white;
   }
 `
 export const SeeMore = ({ clink }: any) => {

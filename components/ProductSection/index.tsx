@@ -12,6 +12,7 @@ const ProductSectionContainer = styled.section`
 
   .product-links {
     display: flex;
+    font-size: 1.4rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
@@ -29,6 +30,7 @@ const ProductSectionContainer = styled.section`
   @media screen and (min-width: 700px) {
     min-height: 50vh;
     .product-links {
+      font-size: 1.7rem;
       gap: 2rem;
       padding: 2.5rem 0;
     }
