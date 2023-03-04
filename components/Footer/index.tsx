@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 import { NavLink } from '../NavLink'
+import Link from 'next/link'
 
 const FooterContainer = styled.footer`
   padding-top: 4rem;
@@ -81,7 +82,9 @@ const Footer = () => {
     <FooterContainer>
       <div className="footer-head__container">
         <div className="footer-logo">
-          <Image src="/assets/logo.png" className="img" fill alt="logo" />
+          <Link href="/">
+            <Image src="/assets/logo.png" className="img" fill alt="logo" />
+          </Link>
         </div>
         <div className="footer-links__container">
           <div className="footer-links">

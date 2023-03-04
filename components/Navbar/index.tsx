@@ -70,6 +70,7 @@ const Navbar = () => {
                 src="/assets/logo.png"
                 height={27}
                 width={41}
+                sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
                 alt="logo"
               />
 
@@ -124,6 +125,7 @@ const Navbar = () => {
                   className="search-img"
                   width={18}
                   height={18}
+                  sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
                   alt="search bar"
                 />
               </div>

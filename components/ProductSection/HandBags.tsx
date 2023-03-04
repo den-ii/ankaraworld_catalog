@@ -23,15 +23,15 @@ const HandBags = () => {
     <ProductContainer style={{ minHeight: '30vh' }}>
       <div className="lg">
         <GridPart>{products.slice(0, 5)}</GridPart>
-        <SeeMore clink="/collection/handbags" />
+        <SeeMore clink="/collection/bags" />
       </div>
       <div className="md">
         <GridPart>{products.slice(0, 8)}</GridPart>
-        <SeeMore clink="/collection/handbags" />
+        <SeeMore clink="/collection/bags" />
       </div>
       <div className="sm">
         <GridPart>{products.slice(0, 3)}</GridPart>
-        <SeeMore clink="/collection/handbags" />
+        <SeeMore clink="/collection/bags" />
       </div>
     </ProductContainer>
   )
