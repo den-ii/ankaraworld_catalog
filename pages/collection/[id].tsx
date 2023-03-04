@@ -10,7 +10,7 @@ export const getStaticPaths = async () => {
 
   // const data = products
   const data = await res.json()
-  const paths = data.map((product: { id: any }) => {
+  const paths: any = data.map((product: { id: any }) => {
     return {
       params: { id: product.id },
     }

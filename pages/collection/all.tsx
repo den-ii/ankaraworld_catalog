@@ -1,7 +1,7 @@
 import { GridPart } from '@/components/ProductSection/GridPart'
 import { Product } from '@/components/ProductSection/Product'
 import { Context } from 'context'
-import { shuffle } from 'utils'
+// import { shuffle } from 'utils'
 import CollectionLayout from 'Layouts/CollectionLayout'
 import Head from 'next/head'
 import { useContext, useEffect } from 'react'
