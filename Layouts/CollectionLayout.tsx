@@ -45,7 +45,7 @@ const CollectionLayout = ({ children }: LayoutProps) => {
                   <IoCheckmarkDone className="check" />
                 </div>
               </NavLink>
-              <NavLink href="/collection/footwears" className="setnav">
+              <NavLink href="/collection/footwear" className="setnav">
                 <div>Footwears</div>{' '}
                 <div className="check-container">
                   <IoCheckmarkDone className="check" />
