@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 export const getStaticPaths = async () => {
-  const res = await fetch('http://localhost:3000/products.json')
+  const res = await fetch('https://ankaraworldserver.netlify.app/products.json')
 
   // const data = products
   const data = await res.json()
@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
 }
 export const getStaticProps = async (context: { params: { id: any } }) => {
   const id = context.params.id
-  const res = await fetch('http://localhost:3000/products.json')
+  const res = await fetch('https://ankaraworldserver.netlify.app/products.json')
 
   // const data = products
   const allData = await res.json()
