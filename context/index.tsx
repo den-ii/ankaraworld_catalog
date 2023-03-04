@@ -46,8 +46,11 @@ const MyContext = ({ children }: MyContextProps) => {
 
   const req = async () => {
     const response = await axios.get<productTypes[]>(
-      'https://ankaraworldserver.netlify.app/products.json',
-    )
+      'https://ankaraworldcatalog.netlify.app/products.json',{
+         headers: {
+    'Access-Control-Allow-Origin': '*'
+  }
+      })
     console.log(response.data)
     setAllProducts(response.data)
   }
