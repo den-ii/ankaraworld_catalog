@@ -72,7 +72,8 @@ margin-right: auto;
     margin-bottom: 1rem;
     border-radius: 7px;
     font-size: 1.5rem !important;
-}
+}import { ContactContainer } from '@/styles/contactcontainer';
+
 
 .contact--form__submit{
     font-size: 1.6rem;

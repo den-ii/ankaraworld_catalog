@@ -6,7 +6,7 @@ import { useContext, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { Context } from '../context'
 import useDropoff from '../hooks/useDropOff'
-import CollectionNav from './CollectionNav'
+import CollectionLayoutContainer from './CollectionNav'
 
 const CollectionLayout = ({ children }: LayoutProps) => {
   const { nav, setNav, setBurger } = useContext(Context)
@@ -23,7 +23,7 @@ const CollectionLayout = ({ children }: LayoutProps) => {
   const { pathname } = useRouter()
   return (
     <>
-      <CollectionNav ref={collectionNavRef}>
+      <CollectionLayoutContainer ref={collectionNavRef}>
         {nav && (
           <div className="collection-nav__container" data-testid="sav">
             <div>
@@ -77,7 +77,7 @@ const CollectionLayout = ({ children }: LayoutProps) => {
           {pathname == '/collection/footwear' && <h2>Footwears </h2>}
           {pathname == '/collection/accessories' && <h2>Accessories </h2>}
         </div>
-      </CollectionNav>
+      </CollectionLayoutContainer>
       {children}
     </>
   )

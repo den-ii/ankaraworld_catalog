@@ -3,13 +3,13 @@ import styled from 'styled-components'
 export const GridPart = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
   .lg, .md{
     display: none;
   }
   .product-img__container {
-    height: 120px;
+    height: 140px;
     position: relative;
     background-color: #ffffff;
     border-radius: var(--border-radius);

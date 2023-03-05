@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 body {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--primary);
 }
 button {
@@ -85,8 +85,8 @@ img {
 }
 .review {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 .sm {
   display: none;
@@ -110,8 +110,8 @@ img {
   }
   .review {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
   }
   .sm {
     display: block;

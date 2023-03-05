@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const CollectionNav = styled.main`
+const CollectionLayoutContainer = styled.nav`
   /* display: flex;
   align: center;
   justify-content: center; */
@@ -83,4 +83,4 @@ const CollectionNav = styled.main`
     }
   }
 `
-export default CollectionNav
+export default CollectionLayoutContainer
