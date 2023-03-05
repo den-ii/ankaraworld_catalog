@@ -31,8 +31,12 @@ export default function Accessories() {
       <Head>
         <title>Ankara World Catalog | Collection</title>
         <link rel="icon" href="/assets/icon.svg" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
       </Head>
-      <section style={{ minHeight: '100vh', paddingBottom: '3rem'}}>
+      <section style={{ minHeight: '100vh', paddingBottom: '3rem' }}>
         <div>Will be available soon</div>
         {/* <GridPart>{allBags}</GridPart> */}
       </section>

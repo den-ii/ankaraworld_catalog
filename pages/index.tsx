@@ -18,6 +18,10 @@ export default function Home() {
       <Head>
         <title>Ankara World Catalog | Home</title>
         <link rel="icon" href="/assets/icon.svg" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
       </Head>
       <main>
         <HeroSection />

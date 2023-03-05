@@ -85,6 +85,10 @@ export default function Contact() {
       <Head>
         <title>Ankara World Catalog | Contact</title>
         <link rel="icon" href="/assets/icon.svg" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
       </Head>
       <main>
         <ContactContainer>

@@ -13,7 +13,7 @@ label{
     padding: 0.7rem;
     border-radius: 7px;
     border: 1px solid var(--primary);
-    font-size: 1.2rem !important;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 .contact--form__textarea{
@@ -63,7 +63,7 @@ margin-left: auto;
 margin-right: auto;
 .contact--form__text{
     
-    font-size: 1.5rem !important;
+    font-size: 1.6rem;
 }
 .contact--form__textarea{
     width: 100%;
@@ -72,8 +72,7 @@ margin-right: auto;
     margin-bottom: 1rem;
     border-radius: 7px;
     font-size: 1.5rem !important;
-}import { ContactContainer } from '@/styles/contactcontainer';
-
+}
 
 .contact--form__submit{
     font-size: 1.6rem;
