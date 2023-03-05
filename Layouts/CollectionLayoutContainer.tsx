@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const CollectionLayoutContainer = styled.nav`
+const CollectionLayoutContainer = styled.main`
   /* display: flex;
   align: center;
   justify-content: center; */

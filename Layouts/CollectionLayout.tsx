@@ -6,7 +6,7 @@ import { useContext, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { Context } from '../context'
 import useDropoff from '../hooks/useDropOff'
-import CollectionLayoutContainer from './CollectionNav'
+import CollectionLayoutContainer from './CollectionLayoutContainer'
 
 const CollectionLayout = ({ children }: LayoutProps) => {
   const { nav, setNav, setBurger } = useContext(Context)
