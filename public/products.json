@@ -7,7 +7,7 @@
 
     "details": "Stunning functional chic Leather bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -22,9 +22,9 @@
       "/assets/bags/adunni/adunni2.jpeg"
     ],
     "details": "Improved Adunni bag - formidable, interlocked chain (no break, no fading) - new locks",
-    "price": "17,000",
-    "bulk_price": "16,000",
-    "whole_sale": "15,000",
+    "price": "18,000",
+    "bulk_price": "15,000",
+    "whole_sale": "16,000",
     "bottom": true
   },
 
@@ -34,9 +34,9 @@
     "prod_name": "Afume Bag",
     "image": "/assets/bags/afume/afume_triple.png",
     "details": "Lorem Ipsum architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquamarchitecto voluptate aliquam",
-    "price": "",
-    "bulk_price": "",
-    "discount": "",
+    "price": "13,000",
+    "bulk_price": "10,000",
+    "Whole_sale": "11,000",
     "dimensions": "",
     "available": "",
     "bottom": false
@@ -54,7 +54,7 @@
   },
   {
     "id": "hb_04",
-    "bulk_price": "7, 500",
+    "bulk_price": "6,000",
     "carousel": [
       "/assets/bags/belle_lisa/belle_lisa1.jpeg",
       "/assets/bags/belle_lisa/belle_lisa2.jpeg",
@@ -86,9 +86,9 @@
     ],
     "image": "/assets/bags/chioma/chioma5.jpeg",
     "details": "Classy yet simple must have Ankara bag - adjustable chain strap with Ankara fabric intertwined. - Enclosed with a lock and pin fasteners - fully lined with red velvet material - inner pocket",
-    "price": "13,000",
-    "bulk_price": "12,000",
-    "whole_sale": "11,000",
+    "price": "15,000",
+    "bulk_price": "11,000",
+    "whole_sale": "13,000",
     "bottom": true
   },
   {
@@ -97,9 +97,9 @@
     "prod_name": "Cyril Bag",
     "image": "/assets/bags/cyril/cyril.jpg",
     "details": "Curvy Structured tote bag Enclosed with a zipper Lined with black velvet material",
-    "price": "13,000",
-    "bulk_price": "12,000",
-    "whole_sale": "11,000",
+    "price": "14,000",
+    "bulk_price": "11,000",
+    "whole_sale": "13,000",
     "bottom": true
   },
   {
@@ -109,7 +109,7 @@
     "image": "/assets/bags/ediyie/ediyie.jpg",
     "details": "Hexagonal shaped tote bag - comes with a detachable and adjustable shoulder strap - lined with black velvet material -",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -125,8 +125,8 @@
     ],
     "details": "Medium size beauty! - Quilted front and back - adjustable chain with Ankara fabric intertwined - black velvet lining - inner pocket",
     "price": "15,000",
-    "bulk_price": "13,000",
-    "whole_sale": "14,000",
+    "bulk_price": "12,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -145,9 +145,9 @@
       "/assets/bags/emb_miriam/miriam6.jpeg"
     ],
     "details": "Chic multipurpose bag - Chanel inspired (has all the features of a typical Chanel bag) - lined with black velvet material",
-    "price": "17,000",
-    "bulk_price": "16,000",
-    "whole_sale": "15,000",
+    "price": "18,000",
+    "bulk_price": "15,000",
+    "whole_sale": "16,000",
     "bottom": true
   },
   {
@@ -156,26 +156,26 @@
     "prod_name": "Emmanuella Purse",
     "image": "/assets/bags/emmanuella_purse/emmanuella_purse.png",
     "details": "",
-    "price": "15,000",
-    "bulk_price": "14,000",
-    "whole_sale": "13,000",
+    "price": "10,000",
+    "bulk_price": "7,000",
+    "whole_sale": "8,000",
     "bottom": false
   },
   {
     "id": "hb_12",
     "prod_section": "hand_bags",
-    "prod_name": "Flores Hand Bag",
+    "prod_name": "Flora Hand Bag",
     "image": "/assets/bags/flores/flores.jpg",
     "details": "",
-    "price": "15,000",
+    "price": "17,000",
     "bulk_price": "14,000",
-    "whole_sale": "13,000",
+    "whole_sale": "15,000",
     "bottom": false
   },
   {
     "id": "hb_13",
     "prod_section": "hand_bags",
-    "prod_name": "Flora Hand Bag",
+    "prod_name": "Mini-Flora Hand Bag",
     "image": "/assets/bags/flora/flora.jpg",
     "carousel": [
       "/assets/bags/flora/flora.jpg",
@@ -185,7 +185,7 @@
     ],
     "details": "Vegan leather and Ankara mix Ideal for the elderly Fully lined with black velvet material Zipper pocket",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -204,9 +204,9 @@
       "/assets/bags/foluke/foluke5.jpeg"
     ],
     "details": "Vegan leather and Ankara mix Ideal for the elderly Fully lined with black velvet material Zipper pocket",
-    "price": "11,000",
+    "price": "13,000",
     "bulk_price": "10,000",
-    "whole_sale": "9,000",
+    "whole_sale": "11,000",
     "bottom": false
   },
 
@@ -223,7 +223,7 @@
     ],
     "details": "Stunning functional chic Ankara bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
     "price": "20,000",
-    "bulk_price": "19,000",
+    "bulk_price": "17,000",
     "whole_sale": "18,000",
     "bottom": true
   },
@@ -243,7 +243,7 @@
     ],
     "details": "Stunning functional chic Ankara bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -260,9 +260,9 @@
       "/assets/bags/lelani/lelani1.jpeg"
     ],
     "details": "Beautiful mix of different colors but same Ankara design. Lelani bag is a maxi bag that can serve as a laptop bag as well as a handbag. Dimensions; Length- 16 inches Width - 7 inches Height 12 inches",
-    "price": "18,000",
+    "price": "20,000",
     "bulk_price": "17,000",
-    "whole_sale": "16,000",
+    "whole_sale": "18,000",
     "bottom": false
   },
   {
@@ -272,7 +272,7 @@
     "image": "/assets/bags/madera/madera.jpg",
     "details": "",
     "price": "18,000",
-    "bulk_price": "17,000",
+    "bulk_price": "15,000",
     "whole_sale": "16,000",
     "bottom": false
   },
@@ -286,9 +286,9 @@
       "/assets/bags/makamba/makamba.jpg"
     ],
     "details": "",
-    "price": "18,000",
-    "bulk_price": "17,000",
-    "whole_sale": "16,000",
+    "price": "15,000",
+    "bulk_price": "12,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -305,7 +305,7 @@
     ],
     "details": "Vegan leather and Ankara fabric mix It comes with an adjustable and detachable shoulder strap",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -320,9 +320,9 @@
       "/assets/bags/onape/onape2.jpeg"
     ],
     "details": "A functional purse with multiple compartments",
-    "price": "6,000",
-    "bulk_price": "5,000",
-    "whole_sale": "4,000",
+    "price": "7,000",
+    "bulk_price": "4,000",
+    "whole_sale": "5,000",
     "bottom": true
   },
   {
@@ -336,7 +336,7 @@
     ],
     "details": "Made with black chinos fabric, comes with a detachable and adjustable shoulder strap. - Ankara bow can be loosened and re-tied",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -352,7 +352,7 @@
     ],
     "details": "",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -365,7 +365,7 @@
     "carousel": ["/assets/bags/tere/tere.jpg", "/assets/bags/tere/tere1.jpg"],
     "details": "",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -380,7 +380,7 @@
     ],
     "details": "Beautiful mix of Ankara and blue denim - maxi tote bag - comes with a detachable and adjustable strap - comes with a matching wallet purse",
     "price": "20,000",
-    "bulk_price": "19,000",
+    "bulk_price": "17,000",
     "whole_sale": "18,000",
     "bottom": false
   },
@@ -391,9 +391,9 @@
     "image": "/assets/bags/vera/vera.jpg",
 
     "details": "Beautiful mix of different Ankara prints. It comes with a detachable and adjustable shoulder strap",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "13,000",
+    "bulk_price": "10,000",
+    "whole_sale": "11,000",
     "bottom": false
   },
   {
@@ -404,7 +404,7 @@
 
     "details": "",
     "price": "15,000",
-    "bulk_price": "14,000",
+    "bulk_price": "12,000",
     "whole_sale": "13,000",
     "bottom": false
   },
@@ -443,9 +443,9 @@
       "/assets/bags/rhassila/rhassila1.jpg"
     ],
     "details": "Maxi tote bag Comes with a detachable and adjustable shoulder strap Can fit a 16 inches laptop",
-    "price": "15,000",
-    "bulk_price": "14,000",
-    "whole_sale": "13,000",
+    "price": "20,000",
+    "bulk_price": "17,000",
+    "whole_sale": "18,000",
     "bottom": false
   },
   {
@@ -454,7 +454,7 @@
     "prod_name": "Atolani Laptop Bag",
     "image": "/assets/laptop_bags/atonali/atolani4.jpeg",
     "details": "17 inches -Mixed with denim -Outer pocket and inner pocket -Lined with black velvet material -Adjustable and detachable shoulder strap",
-    "price": "12,000",
+    "price": "16,000",
     "carousel": [
       "/assets/laptop_bags/atonali/atolani.jpeg",
       "/assets/laptop_bags/atonali/atolani.jpg",
@@ -468,8 +468,8 @@
       "/assets/laptop_bags/atonali/atolani8.jpeg",
       "/assets/laptop_bags/atonali/atolani9.jpeg"
     ],
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "bulk_price": "13,000",
+    "whole_sale": "14,000",
     "bottom": false
   },
 
@@ -488,9 +488,9 @@
       "/assets/laptop_bags/taye/taye3.jpeg"
     ],
     "details": "17 inches - lined with black velvet lining - double inner pocket - well padded - comes with a detachable and adjustable shoulder strap",
-    "price": "11,000",
+    "price": "13,000",
     "bulk_price": "10,000",
-    "whole_sale": "9,000",
+    "whole_sale": "11,000",
     "bottom": false
   },
   {
@@ -504,9 +504,9 @@
       "/assets/laptop_bags/seun/seun2.jpeg"
     ],
     "details": "14 inches - outer pocket and inner compartment - well padded - comes with a detachable and adjustable shoulder strap",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "15,000",
+    "bulk_price": "12,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -515,9 +515,9 @@
     "prod_name": "Thiam Laptop Bag",
     "image": "/assets/laptop_bags/thiam/thiam.jpg",
     "details": "",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "15,000",
+    "bulk_price": "12,000", 
+    "whole_sale": "13,000",
     "bottom": false
   },
 
@@ -527,9 +527,9 @@
     "prod_name": "Mike Laptop Bag",
     "image": "/assets/laptop_bags/mike/mike.jpg",
     "details": "",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "20,000",
+    "bulk_price": "17,000",
+    "whole_sale": "18,000",
     "bottom": false
   },
   {
@@ -555,9 +555,9 @@
       "/assets/backpack/ibra/ibra5.jpeg"
     ],
     "details": "Medium size Ibra backpack Two side pockets for water bottles Multiple compartments Foam structured backpack",
-    "price": "8,000",
+    "price": "10,000",
     "bulk_price": "7,000",
-    "whole_sale": "6,000",
+    "whole_sale": "8,000",
     "bottom": false
   },
   {
@@ -572,7 +572,7 @@
     ],
     "details": "Well padded laptop backpack - 18 inches in height (can fit any laptop) - two side pockets to hold water bottles - outer zipper compartment - inner compartment for your laptop",
     "price": "17,000",
-    "bulk_price": "16,000",
+    "bulk_price": "14,000",
     "whole_sale": "15,000",
     "bottom": false
   },
@@ -589,7 +589,7 @@
     ],
     "details": "16 inches backpack - Ankara and denim mix - Lined with black velvet material - outer pouch pocket - side pockets",
     "price": "17,000",
-    "bulk_price": "16,000",
+    "bulk_price": "14,000",
     "whole_sale": "15,000",
     "bottom": false
   }
