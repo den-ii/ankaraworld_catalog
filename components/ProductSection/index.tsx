@@ -37,6 +37,9 @@ const ProductSectionContainer = styled.section`
       gap: 2rem;
       padding: 2.5rem 0;
     }
+    .accessories {
+      display: block;
+    }
   }
 `
 
