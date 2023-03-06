@@ -33,7 +33,7 @@ const CollectionLayoutContainer = styled.main`
     left: 80px;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.45rem;
     // width: 300px;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
     justify-content: center;

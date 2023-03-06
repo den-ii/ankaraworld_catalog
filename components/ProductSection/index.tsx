@@ -12,7 +12,7 @@ const ProductSectionContainer = styled.section`
 
   .product-links {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
@@ -26,6 +26,9 @@ const ProductSectionContainer = styled.section`
     color: white;
     opacity: 1;
     font-weight: 700;
+  }
+  .accessories {
+    display: none;
   }
   @media screen and (min-width: 700px) {
     min-height: 50vh;
@@ -80,7 +83,7 @@ const ProductSection = () => {
           Laptop Bags
         </p>
         <p
-          className={handleClasses(footwear)}
+          className={`${handleClasses(footwear)} accessories`}
           onClick={() => handleAll(setFootwear)}
         >
           Footwears
