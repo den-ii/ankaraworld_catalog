@@ -191,6 +191,9 @@ const Navbar = () => {
           </NavLink> */}
         </div>
       </nav>
+      {burger && (
+        <div className="nav-shadow" onClick={() => setBurger(false)}></div>
+      )}
       <div
         className={`mobile-nav__links ${burgerClass}`}
         data-testid="mobile-nav-links"

@@ -1,7 +1,7 @@
 export const home = [
 
     {
-        "id": "hb_22",
+        "id": "hb_23",
         "prod_section": "hand_bags",
         "prod_name": "Onape Bag",
         "image": "/assets/bags/onape/onape2.jpeg",

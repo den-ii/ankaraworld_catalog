@@ -79,7 +79,7 @@ const NavbarContainer = styled.header`
     transform: translateX(100%);
   }
   .mobile-nav__links.nav-active {
-    transform: translateX(10%);
+    transform: translateX(20%);
   }
   .mobile-nav__link {
     font-size: 2rem;
@@ -102,7 +102,7 @@ const NavbarContainer = styled.header`
     display: block;
     width: 100%;
     padding: 0.8rem;
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
     border: 1px solid var(--primary);
     border-radius: 6px;
   }
@@ -120,6 +120,15 @@ const NavbarContainer = styled.header`
   }
   .desktop {
     display: none;
+  }
+  .nav-shadow {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
   @media screen and (min-width: 730px) {
     padding-top: 1.4rem;
@@ -200,6 +209,9 @@ const NavbarContainer = styled.header`
     .desktop-search {
       padding: 1.1rem;
       width: 500px;
+    }
+    .nav-shadow {
+      display: none;
     }
   }
 `

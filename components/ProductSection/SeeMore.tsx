@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 
 export const SeeMoreContainer = styled.div`
-  padding: 5rem 0 6rem;
+  padding: 2.5rem 0 4rem;
   text-align: center;
   a {
     color: black;

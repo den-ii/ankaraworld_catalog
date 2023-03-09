@@ -92,7 +92,7 @@ const ProductSection = () => {
           Footwears
         </p>
         <p
-          className={handleClasses(accessories)}
+          className={`${handleClasses(footwear)} accessories`}
           onClick={() => handleAll(setAccessories)}
         >
           Accessories

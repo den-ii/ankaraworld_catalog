@@ -28,7 +28,7 @@ const CollectionLayoutContainer = styled.main`
   .collection-nav__container {
     z-index: 2;
     background: white;
-    bottom: -185px;
+    bottom: -195px;
     position: absolute;
     left: 80px;
     display: flex;
