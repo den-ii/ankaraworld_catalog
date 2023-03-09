@@ -62,28 +62,27 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <nav className={`mobile-nav__container ${searchClass}`}>
-        {!search && (
-          <div className="nav__logo">
-            <Link href="/">
-              <Image
-                className="mobile mobile-nav__img"
-                src="/assets/logo.png"
-                height={27}
-                width={41}
-                sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
-                alt="logo"
-              />
+        <div className={search ? 'none' : 'nav__logo'}>
+          <Link href="/">
+            <Image
+              className="mobile mobile-nav__img"
+              src="/assets/logo.png"
+              height={27}
+              width={41}
+              sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
+              alt="logo"
+            />
 
-              <Image
-                className="desktop img desktop-nav__img"
-                src="/assets/logo.png"
-                fill
-                sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
-                alt="logo"
-              />
-            </Link>
-          </div>
-        )}
+            <Image
+              className="desktop img desktop-nav__img"
+              src="/assets/logo.png"
+              fill
+              sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
+              alt="logo"
+            />
+          </Link>
+        </div>
+
         <div className={`search_burg ${searchClass}`}>
           <div ref={searchRef}>
             {search && (
@@ -118,28 +117,30 @@ const Navbar = () => {
                 </form>
               </div>
             )}
-            {!search && (
-              <div onClick={handleSearch} data-testid="open-mysearch">
-                <Image
-                  src="/assets/search.svg"
-                  className="search-img"
-                  width={18}
-                  height={18}
-                  sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
-                  alt="search bar"
-                />
-              </div>
-            )}
-          </div>
-          {!search && (
+
             <div
-              onClick={() => setBurger(!burger)}
-              className={`burger ${burgerClass}`}
-              data-testid="open-menu"
+              onClick={handleSearch}
+              className={search ? 'none' : ''}
+              data-testid="open-mysearch"
             >
-              <div className="burger-icon"></div>
+              <Image
+                src="/assets/search.svg"
+                className="search-img"
+                width={18}
+                height={18}
+                sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
+                alt="search bar"
+              />
             </div>
-          )}
+          </div>
+
+          <div
+            onClick={() => setBurger(!burger)}
+            className={`burger ${burgerClass} ${search ? 'none' : ''}`}
+            data-testid="open-menu"
+          >
+            <div className="burger-icon"></div>
+          </div>
         </div>
 
         {/* Large-screens nav */}

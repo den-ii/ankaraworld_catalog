@@ -22,7 +22,7 @@ label{
     padding: 0.7rem;
     margin-bottom: 1rem;
     border-radius: 7px;
-    font-size: 1.2rem !important;
+    font-size: 1.45rem !important;
 }
 
 .checkbox--label{

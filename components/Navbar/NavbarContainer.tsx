@@ -121,6 +121,9 @@ const NavbarContainer = styled.header`
   .desktop {
     display: none;
   }
+  .none {
+    display: none;
+  }
   .nav-shadow {
     position: fixed;
     background: rgba(0, 0, 0, 0.2);

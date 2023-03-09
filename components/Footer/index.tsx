@@ -53,6 +53,13 @@ const FooterContainer = styled.footer`
   .footer-socials__links a:hover {
     opacity: 0.6;
   }
+  .--mylink-container {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .--mylink:hover {
+    color: var(--secondary);
+  }
   @media screen and (min-width: 600px) {
     .footer-sub__container {
       width: auto;
@@ -151,6 +158,11 @@ const Footer = () => {
           </a>
         </div>
         <div className="copyright">&copy; Ankara World Empire</div>
+        <div className="--mylink-container">
+          <a className="--mylink" href="https://denidev.netlify.app">
+            @deni
+          </a>
+        </div>
       </div>
     </FooterContainer>
   )
