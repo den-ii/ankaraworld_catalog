@@ -36,7 +36,16 @@ export default function Footwears() {
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
         />
       </Head>
-      <section style={{ minHeight: '100vh', paddingBottom: '3rem' }}>
+      <section
+        style={{
+          minHeight: '100vh',
+          paddingBottom: '3rem',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}
+      >
         <div>Will be available soon</div>
         {/* <GridPart>{allBags}</GridPart> */}
       </section>

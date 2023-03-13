@@ -7,24 +7,22 @@ import { useContext, useEffect } from 'react'
 
 export default function Backpacks() {
   const { setBurger, allProducts, setNav } = useContext(Context)
-
   useEffect(() => {
     setBurger(false)
     setNav(false)
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  //   const allBags: any[] = accessories.map((product) => {
-  //     return (
-  //       <Product
-  //         key={product.id}
-  //         id={product.id}
-  //         name={product.prod_name}
-  //         image={product.image}
-  //         bottom={product.bottom}
-  //       />
-  //     )
-  //   })
+  const allBags: JSX.Element[] = allProducts
+    .filter((product) => product.prod_section === 'backpack')
+    .map((product) => (
+      <Product
+        key={product.id}
+        id={product.id}
+        name={product.prod_name}
+        image={product.image}
+        bottom={product.bottom}
+      />
+    ))
 
   return (
     <>
@@ -37,8 +35,8 @@ export default function Backpacks() {
         />
       </Head>
       <section style={{ minHeight: '100vh', paddingBottom: '3rem' }}>
-        <div>Will be available soon</div>
-        {/* <GridPart>{allBags}</GridPart> */}
+        {/* <div>Will be available soon</div> */}
+        <GridPart>{allBags}</GridPart>
       </section>
     </>
   )
