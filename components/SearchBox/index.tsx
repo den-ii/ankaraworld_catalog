@@ -29,7 +29,7 @@ const SearchBoxContainer = styled.div`
   background-color: white;
   padding: 1rem;
   width: 100%;
-  top: 45px;
+  top: 55px;
   right: 0;
   left: 0;
   border-radius: 8px;

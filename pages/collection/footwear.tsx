@@ -38,7 +38,7 @@ export default function Footwears() {
       </Head>
       <section
         style={{
-          minHeight: '100vh',
+          minHeight: '70vh',
           paddingBottom: '3rem',
           display: 'flex',
           justifyContent: 'center',
