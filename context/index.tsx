@@ -47,7 +47,7 @@ const MyContext = ({ children }: MyContextProps) => {
   const req = async () => {
     await axios
       .get<productTypes[]>(
-        'https://ankaraworldcatalog.netlify.app/products.json',
+        'https://ankaraworldserver.netlify.app/products.json',
         // 'http://localhost:3000/products.json',
         {
           headers: {
