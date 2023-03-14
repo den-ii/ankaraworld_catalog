@@ -125,7 +125,7 @@ const Product = ({ product }: any) => {
               </b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
-              WholeSale Price:{' '}
+              Wholesale Price:{' '}
               <b style={{ marginLeft: '0.5rem' }}>
                 NGN {product[0].whole_sale}
               </b>
