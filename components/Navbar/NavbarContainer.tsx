@@ -156,9 +156,8 @@ const NavbarContainer = styled.header`
       gap: 2rem;
     }
     .desktop-nav__link:hover {
-      /* opacity: 0.6; */
+      opacity: 0.8; 
       /* color: var(--secondary); */
-      font-weight: 600;
     }
     .desktop-search,
     .desktop-search__submit {
