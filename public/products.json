@@ -33,9 +33,10 @@
     "prod_section": "hand_bags",
     "prod_name": "Afume Bag",
     "image": "/assets/bags/afume/afume_triple.png",
-    "details": "Lorem Ipsum architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquam architecto voluptate aliquamarchitecto voluptate aliquam",
-    "price": "",
-    "bulk_price": "",
+    "details": "",
+    "price": "13,000",
+    "bulk_price": "12,000",
+    "whole_sale":"11,000"
     "discount": "",
     "dimensions": "",
     "available": "",
