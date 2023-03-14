@@ -207,7 +207,7 @@ const NavbarContainer = styled.header`
       margin-top: 0.3rem;
     }
   }
-  @media screen and (min-width: 930px) {
+  @media screen and (min-width: 975px) {
     .desktop-search {
       padding: 1.1rem;
       width: 500px;
