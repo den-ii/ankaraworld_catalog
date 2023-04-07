@@ -5,11 +5,14 @@
     "prod_name": "Kyra Leather Bag",
     "image": "/assets/bags/kyra/kyra(leather).jpg",
 
-    "details": "Stunning functional chic Leather bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
-    "price": "15,000",
-    "bulk_price": "14,000",
-    "whole_sale": "13,000",
-    "bottom": false
+    "details": "Stunning functional chic faux Leather bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
+    "price": "20,000",
+    "dimensions": "11.3 x 4 x 10 inches",
+    "bulk_price": "16,000",
+    "whole_sale": "18,000",
+    "bottom": false,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_01",
@@ -21,11 +24,14 @@
       "/assets/bags/adunni/adunni.jpg",
       "/assets/bags/adunni/adunni2.jpeg"
     ],
-    "details": "Improved Adunni bag - formidable, interlocked chain (no break, no fading) - new locks",
-    "price": "17,000",
-    "bulk_price": "16,000",
-    "whole_sale": "15,000",
-    "bottom": true
+    "details": "medium sized chain handle bag, interlocked quality chain (no break, no fading) lined with black velvet material, has inner pocket and its enclosed with a lock",
+    "price": "25,000",
+    "bulk_price": "20,000",
+    "whole_sale": "23,000",
+    "dimensions": "11.5 x 5.5 x 8 inches",
+    "bottom": true,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
 
   {
@@ -34,13 +40,14 @@
     "prod_name": "Afume Bag",
     "image": "/assets/bags/afume/afume_triple.png",
     "details": "",
-    "price": "10,000",
-    "bulk_price": "11,000",
-    "whole_sale": "9,000",
+    "price": "15,000",
+    "bulk_price": "12,000",
+    "whole_sale": "13,000",
     "discount": "",
-    "dimensions": "",
     "available": "",
-    "bottom": false
+    "bottom": true,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_03",
@@ -48,14 +55,17 @@
     "prod_name": "Amaka Bag",
     "image": "/assets/bags/amaka/amaka.jpg",
     "details": "",
-    "price": "11,000",
-    "bulk_price": "10,000",
-    "whole_sale": "9,000",
-    "bottom": false
+    "price": "15,000",
+    "bulk_price": "12,000",
+    "whole_sale": "13,000",
+    "bottom": false,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_04",
-    "bulk_price": "7, 500",
+    "bulk_price": "9,000",
+    "details": "mini hand bag with a detachable and adjustable shoulder faux leather strap",
     "carousel": [
       "/assets/bags/belle_lisa/belle_lisa1.jpeg",
       "/assets/bags/belle_lisa/belle_lisa2.jpeg",
@@ -65,10 +75,12 @@
     ],
 
     "image": "/assets/bags/belle_lisa/belle_lisa1.jpeg",
-    "price": "8, 500",
+    "price": "12,000",
     "prod_name": "Belle-Lisa Bag",
     "prod_section": "hand_bags",
-    "whole_sale": "6, 500",
+    "whole_sale": "10,000",
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above",
     "bottom": false
   },
   {
@@ -87,10 +99,13 @@
     ],
     "image": "/assets/bags/chioma/chioma5.jpeg",
     "details": "Classy yet simple must have Ankara bag - adjustable chain strap with Ankara fabric intertwined. - Enclosed with a lock and pin fasteners - fully lined with red velvet material - inner pocket",
-    "price": "13,000",
-    "bulk_price": "12,000",
-    "whole_sale": "11,000",
-    "bottom": true
+    "dimensions": "12.5 x 5 x 10 inches",
+    "price": "27,000",
+    "bulk_price": "21,000",
+    "whole_sale": "24,000",
+    "bottom": true,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_07",
@@ -98,10 +113,12 @@
     "prod_name": "Cyril Bag",
     "image": "/assets/bags/cyril/cyril.jpg",
     "details": "Curvy Structured tote bag Enclosed with a zipper Lined with black velvet material",
-    "price": "13,000",
-    "bulk_price": "12,000",
-    "whole_sale": "11,000",
-    "bottom": true
+    "price": "20,000",
+    "bulk_price": "15,000",
+    "whole_sale": "17,000",
+    "bottom": true,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_08",
@@ -112,7 +129,9 @@
     "price": "15,000",
     "bulk_price": "14,000",
     "whole_sale": "13,000",
-    "bottom": false
+    "bottom": false,
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
   },
   {
     "id": "hb_09",
@@ -234,19 +253,21 @@
     "prod_name": "Kyra Bag",
     "image": "/assets/bags/kyra/kyraa.jpeg",
     "carousel": [
-      "/assets/bags/kyra/kyraa.jpeg",
-      "/assets/bags/kyra/kyra2.jpeg",
-      "/assets/bags/kyra/kyra.png",
       "/assets/bags/kyra/kyra3.jpeg",
       "/assets/bags/kyra/kyra4.jpeg",
       "/assets/bags/kyra/kyra5.jpeg",
-      "/assets/bags/kyra/kyra(leather).jpg"
+      "/assets/bags/kyra/kyraa.jpeg",
+      "/assets/bags/kyra/kyra2.jpeg",
+      "/assets/bags/kyra/kyra.png"
     ],
     "details": "Stunning functional chic Ankara bag - zipper compartment - inner zipper - high quality interlock adjustable chain",
-    "price": "15,000",
-    "bulk_price": "14,000",
-    "whole_sale": "13,000",
-    "bottom": false
+    "dimensions": "11.3 x 4 x 10 inches",
+    "price": "18,000",
+    "bulk_price": "15,000",
+    "whole_sale": "16,000",
+    "bottom": false,
+    "moq_whole_sale": "6 pieces and above",
+    "moq_bulk": "30 pieces and above"
   },
   {
     "id": "hb_18",
@@ -432,6 +453,23 @@
     "whole_sale": "8,000",
     "bottom": false
   },
+  {
+    "id": "fw_03",
+    "prod_section": "foot_wear",
+    "prod_name": "Ankara Slippers",
+    "image": "/assets/footwear/ankara_slippers/ankara_slippers.jpeg",
+    "carousel": [
+      "/assets/footwear/ankara_slippers/ankara_slippers.jpeg",
+      "/assets/footwear/ankara_slippers/ankara_slippers1.jpeg",
+      "/assets/footwear/ankara_slippers/ankara_slippers2.jpeg",
+      "/assets/footwear/ankara_slippers/ankara_slippers.jpeg"
+    ],
+    "details": "",
+    "price": "10,000",
+    "bulk_price": "9,000",
+    "whole_sale": "8,000",
+    "bottom": false
+  },
 
   {
     "id": "lb_22",
@@ -572,9 +610,9 @@
       "/assets/backpack/atinuke/atinuke2.jpeg"
     ],
     "details": "Well padded laptop backpack - 18 inches in height (can fit any laptop) - two side pockets to hold water bottles - outer zipper compartment - inner compartment for your laptop",
-    "price": "20,000",
-    "bulk_price": "18,000",
-    "whole_sale": "17,000",
+    "price": "17,000",
+    "bulk_price": "16,000",
+    "whole_sale": "15,000",
     "bottom": false
   },
   {

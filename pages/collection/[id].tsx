@@ -6,9 +6,7 @@ import Image from 'next/image'
 import { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 export const getStaticPaths = async () => {
-  const res = await fetch(
-    'https://ankaraworldserver.netlify.app/products.json',
-  )
+  const res = await fetch('https://ankaraworldserver.netlify.app/products.json')
 
   // const data = products
   const data = await res.json()
@@ -24,9 +22,7 @@ export const getStaticPaths = async () => {
 }
 export const getStaticProps = async (context: { params: { id: any } }) => {
   const id = context.params.id
-  const res = await fetch(
-    'https://ankaraworldserver.netlify.app/products.json',
-  )
+  const res = await fetch('https://ankaraworldserver.netlify.app/products.json')
 
   // const data = products
   const allData = await res.json()
@@ -118,17 +114,21 @@ const Product = ({ product }: any) => {
               <b style={{ marginLeft: '0.5rem' }}> NGN {product[0].price}</b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
+              Wholesale Price:{' '}
+              <b style={{ marginLeft: '0.5rem' }}>
+                NGN {product[0].whole_sale}
+              </b>
+            </p>
+            <p style={{ marginTop: '0.5rem' }}>
               Bulk Price:{' '}
               <b style={{ marginLeft: '0.5rem' }}>
                 {' '}
                 NGN {product[0].bulk_price}
               </b>
             </p>
-            <p style={{ marginTop: '0.5rem' }}>
-              Wholesale Price:{' '}
-              <b style={{ marginLeft: '0.5rem' }}>
-                NGN {product[0].whole_sale}
-              </b>
+            <p>Minimum Order Quantity(Bulk) : {product[0].moq_bulk}</p>
+            <p>
+              Minimum Order Quantity(Wholesale) : {product[0].moq_whole_sale}
             </p>
           </div>
         </ProductContainer>

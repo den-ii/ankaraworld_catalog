@@ -16,16 +16,33 @@ export const home = [
         "bottom": true
     },
     {
-        "id": "fw_02",
+        "id": "fw_03",
         "prod_section": "foot_wear",
-        "prod_name": "Sandals",
-        "image": "/assets/footwear/sandals/s1.jpeg",
+        "prod_name": "Ankara Slippers",
+        "image": "/assets/footwear/ankara_slippers/ankara_slippers.jpeg",
+        "carousel": [
+            "/assets/footwear/ankara_slippers/ankara_slippers.jpeg",
+            "/assets/footwear/ankara_slippers/ankara_slippers1.jpeg",
+            "/assets/footwear/ankara_slippers/ankara_slippers2.jpeg",
+            "/assets/footwear/ankara_slippers/ankara_slippers3.jpeg"
+        ],
         "details": "",
         "price": "10,000",
         "bulk_price": "9,000",
         "whole_sale": "8,000",
         "bottom": false
     },
+    // {
+    //     "id": "fw_02",
+    //     "prod_section": "foot_wear",
+    //     "prod_name": "Sandals",
+    //     "image": "/assets/footwear/sandals/s1.jpeg",
+    //     "details": "",
+    //     "price": "10,000",
+    //     "bulk_price": "9,000",
+    //     "whole_sale": "8,000",
+    //     "bottom": false
+    // },
     {
         "id": "bp_01",
         "prod_section": "backpack",
