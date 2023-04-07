@@ -126,8 +126,10 @@ const Product = ({ product }: any) => {
                 NGN {product[0].bulk_price}
               </b>
             </p>
-            <p>Minimum Order Quantity(Bulk) : {product[0].moq_bulk}</p>
-            <p>
+            <p style={{ marginTop: '0.5rem' }}>
+              Minimum Order Quantity(Bulk) : {product[0].moq_bulk}
+            </p>
+            <p style={{ marginTop: '0.5rem' }}>
               Minimum Order Quantity(Wholesale) : {product[0].moq_whole_sale}
             </p>
           </div>
