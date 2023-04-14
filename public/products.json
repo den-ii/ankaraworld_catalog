@@ -347,7 +347,7 @@
     "bulk_price": "5,000",
     "whole_sale": "4,000",
     "moq_bulk": "30 pieces and above",
-    "moq_whole_sale": "6 pieces and above"
+    "moq_whole_sale": "6 pieces and above",
     "bottom": true
   },
   {
