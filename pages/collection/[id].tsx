@@ -127,6 +127,9 @@ const Product = ({ product }: any) => {
               </b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
+              Dimensions : {product[0].dimensions}
+            </p>
+            <p style={{ marginTop: '0.5rem' }}>
               Minimum Order Quantity(Bulk) : {product[0].moq_bulk}
             </p>
             <p style={{ marginTop: '0.5rem' }}>
