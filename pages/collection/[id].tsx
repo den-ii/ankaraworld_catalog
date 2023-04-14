@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 }
 export const getStaticProps = async (context: { params: { id: any } }) => {
   const id = context.params.id
-  const res = await fetch('https://ankaraworldcatalog.netlify.app')
+  const res = await fetch('https://ankaraworldserver.netlify.app')
   // 'https://ankaraworldserver.netlify.app/products.json',
 
   // const data = products
