@@ -7,7 +7,7 @@ import { useContext, useEffect } from 'react'
 import styled from 'styled-components'
 export const getStaticPaths = async () => {
   const res = await fetch(
-    'https://ankaraworldserver.netlify.app/products.json',
+    'https://ankaraworldcatalog.netlify.app/products.json',
   )
 
   // const data = products
@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 }
 export const getStaticProps = async (context: { params: { id: any } }) => {
   const id = context.params.id
-  const res = await fetch('https://ankaraworldserver.netlify.app/products.json')
+  const res = await fetch('https://ankaraworldcatalog.netlify.app/products.json')
   // 'https://ankaraworldserver.netlify.app/products.json',
 
   // const data = products
