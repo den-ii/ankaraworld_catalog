@@ -79,6 +79,7 @@
     "prod_name": "Belle-Lisa Bag",
     "prod_section": "hand_bags",
     "whole_sale": "10,000",
+    "dimensions": "10 x 9.5 x 4.2",
     "moq_bulk": "30 pieces and above",
     "moq_whole_sale": "6 pieces and above",
     "bottom": false
