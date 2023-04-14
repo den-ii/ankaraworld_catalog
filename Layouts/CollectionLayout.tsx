@@ -57,6 +57,12 @@ const CollectionLayout = ({ children }: LayoutProps) => {
                   <IoCheckmarkDone className="check" />
                 </div>
               </NavLink>
+              <NavLink href="/collection/duffel" className="setnav">
+                <div>Duffel bags</div>{' '}
+                <div className="check-container">
+                  <IoCheckmarkDone className="check" />
+                </div>
+              </NavLink>
             </div>
           </div>
         )}
@@ -76,6 +82,7 @@ const CollectionLayout = ({ children }: LayoutProps) => {
           {pathname == '/collection/backpack' && <h2>BackPacks </h2>}
           {pathname == '/collection/footwear' && <h2>Footwears </h2>}
           {pathname == '/collection/accessories' && <h2>Accessories </h2>}
+          {pathname == '/collection/duffel' && <h2>Duffel Bags </h2>}
         </div>
       </CollectionLayoutContainer>
       {children}

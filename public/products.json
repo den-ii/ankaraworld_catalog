@@ -361,7 +361,7 @@
     ],
     "dimensions": "",
     "moq_bulk": "30 pieces and above",
-    "moq_whole_sale": "6 pieces and above"
+    "moq_whole_sale": "6 pieces and above",
     "details": "Made with black chinos fabric, comes with a detachable and adjustable shoulder strap. - Ankara bow can be loosened and re-tied",
     "price": "17,000",
     "bulk_price": "13,000",
@@ -631,6 +631,23 @@
       "/assets/backpack/joan/joan1.jpeg",
       "/assets/backpack/joan/joan2.jpeg",
       "/assets/backpack/joan/joan3.jpeg"
+    ],
+    "details": "16 inches backpack - Ankara and denim mix - Lined with black velvet material - outer pouch pocket - side pockets",
+    "price": "17,000",
+    "bulk_price": "16,000",
+    "whole_sale": "15,000",
+    "bottom": false
+  },
+  {
+    "id": "tb_01",
+    "prod_section": "duffel_bag",
+    "prod_name": "Natasha Duffel Bag",
+    "image": "/assets/travel/natasha/travel_bag.jpeg",
+    "carousel": [
+      "/assets/travel/natasha/travel_bag.jpeg",
+      "/assets/travel/natasha/travel_bag1.jpeg",
+      "/assets/travel/natasha/travel_bag2.jpeg",
+      "/assets/travel/natasha/travel_bag3.jpeg"
     ],
     "details": "16 inches backpack - Ankara and denim mix - Lined with black velvet material - outer pouch pocket - side pockets",
     "price": "17,000",
