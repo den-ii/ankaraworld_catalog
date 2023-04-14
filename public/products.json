@@ -346,6 +346,8 @@
     "price": "6,000",
     "bulk_price": "5,000",
     "whole_sale": "4,000",
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
     "bottom": true
   },
   {
@@ -357,10 +359,13 @@
       "/assets/bags/onape/onape2.jpeg",
       "/assets/bags/onape/onape.png"
     ],
+    "dimensions": "",
+    "moq_bulk": "30 pieces and above",
+    "moq_whole_sale": "6 pieces and above"
     "details": "Made with black chinos fabric, comes with a detachable and adjustable shoulder strap. - Ankara bow can be loosened and re-tied",
-    "price": "15,000",
-    "bulk_price": "14,000",
-    "whole_sale": "13,000",
+    "price": "17,000",
+    "bulk_price": "13,000",
+    "whole_sale": "15,000",
     "bottom": false
   },
   {
