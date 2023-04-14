@@ -130,10 +130,10 @@ const Product = ({ product }: any) => {
               Dimensions : {product[0].dimensions}
             </p>
             <p style={{ marginTop: '0.5rem' }}>
-              Minimum Order Quantity(Bulk) : {product[0].moq_bulk}
+              Minimum Order Quantity(Bulk) : 30pcs and above
             </p>
             <p style={{ marginTop: '0.5rem' }}>
-              Minimum Order Quantity(Wholesale) : {product[0].moq_whole_sale}
+              Minimum Order Quantity(Wholesale) : 6pcs and above
             </p>
           </div>
         </ProductContainer>
