@@ -500,7 +500,7 @@
     "prod_name": "Atolani Laptop Bag",
     "image": "/assets/laptop_bags/atonali/atolani4.jpeg",
     "details": "17 inches -Mixed with denim -Outer pocket and inner pocket -Lined with black velvet material -Adjustable and detachable shoulder strap",
-    "price": "12,000",
+    "price": "15,000",
     "carousel": [
       "/assets/laptop_bags/atonali/atolani.jpeg",
       "/assets/laptop_bags/atonali/atolani.jpg",
@@ -514,8 +514,8 @@
       "/assets/laptop_bags/atonali/atolani8.jpeg",
       "/assets/laptop_bags/atonali/atolani9.jpeg"
     ],
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "bulk_price": "14,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
 
@@ -534,9 +534,9 @@
       "/assets/laptop_bags/taye/taye3.jpeg"
     ],
     "details": "17 inches - lined with black velvet lining - double inner pocket - well padded - comes with a detachable and adjustable shoulder strap",
-    "price": "11,000",
-    "bulk_price": "10,000",
-    "whole_sale": "9,000",
+    "price": "15,000",
+    "bulk_price": "14,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -550,9 +550,9 @@
       "/assets/laptop_bags/seun/seun2.jpeg"
     ],
     "details": "14 inches - outer pocket and inner compartment - well padded - comes with a detachable and adjustable shoulder strap",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "15,000",
+    "bulk_price": "14,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -561,9 +561,9 @@
     "prod_name": "Thiam Laptop Bag",
     "image": "/assets/laptop_bags/thiam/thiam.jpg",
     "details": "",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "15,000",
+    "bulk_price": "14,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
 
@@ -573,9 +573,9 @@
     "prod_name": "Mike Laptop Bag",
     "image": "/assets/laptop_bags/mike/mike.jpg",
     "details": "",
-    "price": "12,000",
-    "bulk_price": "11,000",
-    "whole_sale": "10,000",
+    "price": "15,000",
+    "bulk_price": "14,000",
+    "whole_sale": "13,000",
     "bottom": false
   },
   {
@@ -585,7 +585,7 @@
     "image": "/assets/laptop_bags/nesser/nesser.jpg",
     "details": "",
     "price": "15,000",
-    "bulk_price": "12,000",
+    "bulk_price": "14,000",
     "bottom": false
   },
   {
@@ -601,9 +601,9 @@
       "/assets/backpack/ibra/ibra5.jpeg"
     ],
     "details": "Medium size Ibra backpack Two side pockets for water bottles Multiple compartments Foam structured backpack",
-    "price": "8,000",
-    "bulk_price": "7,000",
-    "whole_sale": "6,000",
+    "price": "14,000",
+    "bulk_price": "13,000",
+    "whole_sale": "12,000",
     "bottom": false
   },
   {
@@ -643,10 +643,10 @@
     "id": "tb_01",
     "prod_section": "duffel_bag",
     "prod_name": "Natasha Duffel Bag",
-    "image": "/assets/travel/natasha/travel_bag.jpeg",
+    "image": "/assets/travel/natasha/travel_bag1.jpeg",
     "carousel": [
-      "/assets/travel/natasha/travel_bag.jpeg",
       "/assets/travel/natasha/travel_bag1.jpeg",
+      "/assets/travel/natasha/travel_bag.jpeg",
       "/assets/travel/natasha/travel_bag2.jpeg",
       "/assets/travel/natasha/travel_bag3.jpeg"
     ],
