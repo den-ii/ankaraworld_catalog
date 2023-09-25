@@ -10,14 +10,22 @@ import { Context } from '../../context'
 const LaptopBags = () => {
   const { allProducts } = useContext(Context)
   const products = allProducts
-    .filter((product) => product.prod_section === 'laptop_bags')
+    .filter((product) => product.category === 'laptop bags')
+    .filter(
+      (product) =>
+        product.name === 'Rhassila Bag' ||
+        product.name === 'Atonali Bag' ||
+        product.name === 'Taye Laptop Bag' ||
+        product.name === 'Thiam Laptop Bag' ||
+        product.name === 'Seun Laptop Bag',
+    )
     .map((product) => (
       <Product
         key={product.id}
         id={product.id}
-        name={product.prod_name}
+        name={product.name}
         image={product.image}
-        bottom={product.bottom}
+        bottom={product.top_position}
       />
     ))
     .slice(0, 10)

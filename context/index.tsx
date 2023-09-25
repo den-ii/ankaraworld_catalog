@@ -1,5 +1,7 @@
 import axios from 'axios'
 import { productTypes } from 'data/types'
+import { collection, getDocs } from 'firebase/firestore'
+import { db, storage } from '../firebase/config'
 import {
   createContext,
   Dispatch,
@@ -38,23 +40,18 @@ const MyContext = ({ children }: MyContextProps) => {
   const [burger, setBurger] = useState<boolean>(false)
   const [nav, setNav] = useState<boolean>(false)
   const [searchValue, setSearchValue] = useState<string>('')
-  const [allProducts, setAllProducts] = useState<productTypes[]>([])
+  const [allProducts, setAllProducts] = useState<any | []>([])
+  const productsCollectionRef = collection(db, 'products')
+  
+  const getProducts = async () => {
+    const data = await getDocs(productsCollectionRef)
+    setAllProducts(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+  }
 
   useEffect(() => {
-    req()
+    getProducts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-  const req = async () => {
-    await axios
-      .get<productTypes[]>('https://ankaraworldcatalog.netlify.app/products.json')
-      .then((res) => {
-        res.data
-        setAllProducts(res.data)
-      })
-      .catch((err) => {
-        console.error(err)
-      })
-  }
 
   const contextValues: ContextProps = {
     burger,

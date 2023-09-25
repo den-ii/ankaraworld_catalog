@@ -3,15 +3,27 @@ import { home } from '../../data/home'
 import { SeeMore } from './SeeMore'
 import { Product } from './Product'
 import { ProductContainer } from './ProductContainer'
+import { useContext } from 'react'
+import { Context } from 'context'
 
 const AllProducts = () => {
-  const products = home
+  const { allProducts } = useContext(Context)
+
+  const products = allProducts
+    .filter(
+      (product) =>
+        product.name === 'Oriana Bag' ||
+        product.name === 'Rhassila Bag' ||
+        product.name === 'Taye Laptop Bag' ||
+        product.name === 'Kyra Bag' ||
+        product.name === 'Onape Bag',
+    )
     .map((product) => {
       return (
         <Product
           key={product.id}
           id={product.id}
-          name={product.prod_name}
+          name={product.name}
           image={product.image}
           bottom={product.bottom}
         />

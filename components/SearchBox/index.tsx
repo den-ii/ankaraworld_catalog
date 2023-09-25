@@ -58,7 +58,7 @@ const SearchBox = ({ val, func }: any) => {
   const searchedFilteredProducts = allProducts
     .filter((products) => {
       return (
-        products.prod_name.toLowerCase().includes(val.toLowerCase()) &&
+        products.name?.toLowerCase().includes(val.toLowerCase()) &&
         val.length > 1
       )
     })
@@ -98,7 +98,7 @@ const SearchBox = ({ val, func }: any) => {
             alt="product image"
           />
         </div>
-        <div>{products.prod_name}</div>
+        <div>{products.name}</div>
       </SearchProductContainer>
     )
   })

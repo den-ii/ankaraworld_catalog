@@ -1,27 +1,32 @@
+import { useContext, useEffect, useState } from 'react'
 import { GridPart } from '@/components/ProductSection/GridPart'
 import { Product } from '@/components/ProductSection/Product'
 import { Context } from '../../context'
 // import { shuffle } from 'utils'
 import CollectionLayout from 'Layouts/CollectionLayout'
 import Head from 'next/head'
-import { useContext, useEffect } from 'react'
-
+import Pagination from '../../components/Pagination'
+import { productTypes } from 'data/types'
 export default function All() {
   const { setBurger, allProducts, setNav } = useContext(Context)
+  const [start, setStart] = useState(0)
+  const [limit] = useState(10)
 
   useEffect(() => {
     setBurger(false)
     setNav(false)
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+  const handleItemsShown = () => {}
   const allBags: JSX.Element[] = allProducts.map((product) => {
     return (
       <Product
         key={product.id}
         id={product.id}
-        name={product.prod_name}
+        name={product.name}
         image={product.image}
-        bottom={product.bottom}
+        bottom={product.top_position}
       />
     )
   })
@@ -37,7 +42,17 @@ export default function All() {
       </Head>
 
       <section style={{ minHeight: '100vh', paddingBottom: '3rem' }}>
-        <GridPart>{allBags}</GridPart>
+        <GridPart>
+          {allBags.filter(
+            (x, index) => index >= start && index < limit + start,
+          )}
+        </GridPart>
+        <Pagination
+          selectStart={(num) => setStart(num)}
+          start={start}
+          limit={limit}
+          amount={allBags.length}
+        />
       </section>
     </>
   )

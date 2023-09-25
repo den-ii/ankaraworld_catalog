@@ -4,7 +4,7 @@ type ProductProps = {
   id: string
   image: string
   name: string
-  bottom: boolean
+  bottom?: boolean
 }
 
 export const Product = ({ id, image, name, bottom }: ProductProps) => {

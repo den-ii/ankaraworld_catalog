@@ -19,7 +19,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const searching = allProducts.filter((product) => {
-      return product.prod_name.toLowerCase().includes(searchValue.toLowerCase())
+      return product.name.toLowerCase().includes(searchValue.toLowerCase())
     })
     setSearched(searching)
 
@@ -40,21 +40,21 @@ const Navbar = () => {
       }
     }, 500)
   }
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    if (searched.length) {
-      router.push(`/collection/${searched[0].id}`)
-    } else if ('laptop'.includes(searchValue)) {
-      router.push('/collection/laptop_bags')
-    } else if (searchValue.includes('accessories')) {
-      router.push('/collection/accessories')
-    } else if (searchValue.includes('footwears')) {
-      router.push('/collection/footwears')
-    } else {
-      router.push('/collection/all')
-    }
-  }
+  //   if (searched.length) {
+  //     router.push(`/collection/${searched[0].id}`)
+  //   } else if ('laptop'.includes(searchValue)) {
+  //     router.push('/collection/laptop_bags')
+  //   } else if (searchValue.includes('accessories')) {
+  //     router.push('/collection/accessories')
+  //   } else if (searchValue.includes('footwears')) {
+  //     router.push('/collection/footwears')
+  //   } else {
+  //     router.push('/collection/all')
+  //   }
+   }
   const searchRef = useDropoff(dropSearch)
 
   const searchClass = search ? 'search-active' : 'search-inactive'

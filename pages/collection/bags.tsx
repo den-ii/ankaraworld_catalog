@@ -1,29 +1,43 @@
+import { useContext, useEffect, useState } from 'react'
 import { GridPart } from '@/components/ProductSection/GridPart'
 import { Product } from '@/components/ProductSection/Product'
 import { Context } from '../../context'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db, storage } from '../../firebase/config'
 import CollectionLayout from 'Layouts/CollectionLayout'
 import Head from 'next/head'
-import { useContext, useEffect } from 'react'
+import Pagination from '../../components/Pagination'
 import { productTypes } from 'data/types'
 
 function Bags() {
   const { setBurger, allProducts, setNav } = useContext(Context)
+  const [allHandBags, setHandBags] = useState<any>([])
+  const [start, setStart] = useState(0)
+  const [limit] = useState(10)
+
+  const productsCollectionRef = collection(db, 'products')
+  const q = query(productsCollectionRef, where('category', '==', 'hand bags'))
+
+  const getProducts = async () => {
+    const data = await getDocs(q)
+    setHandBags(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+  }
+
   useEffect(() => {
     setBurger(false)
     setNav(false)
+    getProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-  const allBags: JSX.Element[] = allProducts
-    .filter((product) => product.prod_section === 'hand_bags')
-    .map((product) => (
-      <Product
-        key={product.id}
-        id={product.id}
-        name={product.prod_name}
-        image={product.image}
-        bottom={product.bottom}
-      />
-    ))
+  const handBags: JSX.Element[] = allHandBags.map((product: any) => (
+    <Product
+      key={product.id}
+      id={product.id}
+      name={product.name}
+      image={product.image}
+      bottom={product.top_position}
+    />
+  ))
 
   return (
     <>
@@ -36,7 +50,17 @@ function Bags() {
         />
       </Head>
       <section style={{ minHeight: '100vh', paddingBottom: '3rem' }}>
-        <GridPart>{allBags}</GridPart>
+        <GridPart>
+          {handBags.filter(
+            (x, index) => index >= start && index < limit + start,
+          )}
+        </GridPart>
+        <Pagination
+          selectStart={(num) => setStart(num)}
+          start={start}
+          limit={limit}
+          amount={handBags.length}
+        />
       </section>
     </>
   )

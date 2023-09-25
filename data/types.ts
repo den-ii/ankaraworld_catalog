@@ -1,11 +1,11 @@
 export type productTypes = {
     id: string,
-    prod_section: string,
-    prod_name: string,
+    category: string,
+    name: string,
     image: string,
     carousel?: string[],
     bottom: boolean,
-    details: string,
-
-
+    top_position?: boolean
+    description?: string,
+    dimensions?: string
 }

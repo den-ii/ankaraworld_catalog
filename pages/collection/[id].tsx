@@ -1,17 +1,26 @@
 import { ProductCarousel } from '@/components/ProductCarousel'
+import { collection, getDocs } from 'firebase/firestore'
+import { db, storage } from '../../firebase/config'
 import { Context } from 'context'
 import { productTypes } from 'data/types'
 import Head from 'next/head'
 import Image from 'next/image'
 import { useContext, useEffect } from 'react'
 import styled from 'styled-components'
+
+const productsCollectionRef = collection(db, 'products')
+const getProducts = async () => {
+  const data = await getDocs(productsCollectionRef)
+  return data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+}
+
 export const getStaticPaths = async () => {
-  const res = await fetch(
-    'https://ankaraworldcatalog.netlify.app/products.json',
-  )
+  // const res = await fetch(
+  //   'https://ankaraworldcatalog.netlify.app/products.json',
+  // )
 
   // const data = products
-  const data = await res.json()
+  const data = await getProducts()
   const paths: any = data.map((product: { id: any }) => {
     return {
       params: { id: product.id },
@@ -24,13 +33,16 @@ export const getStaticPaths = async () => {
 }
 export const getStaticProps = async (context: { params: { id: any } }) => {
   const id = context.params.id
-  const res = await fetch('https://ankaraworldcatalog.netlify.app/products.json')
+  // const res = await fetch('https://ankaraworldcatalog.netlify.app/products.json')
+  // const productsCollectionRef = collection(db, 'products')
+
   // 'https://ankaraworldserver.netlify.app/products.json',
 
   // const data = products
-  const allData = await res.json()
+  const allData = await getProducts()
+  console.log(allData)
   // const allData = products
-  const data = allData.filter((product: { id: any }) => {
+  const data = allData.find((product: { id: any }) => {
     if (product.id === id) {
       return true
     } else {
@@ -93,15 +105,15 @@ const Product = ({ product }: any) => {
       </Head>
       <main>
         <ProductContainer>
-          {product[0].carousel && (
+          {product.carousel && (
             <div className="image-container">
-              <ProductCarousel carousel={product[0].carousel} />
+              <ProductCarousel carousel={product.carousel} />
             </div>
           )}
-          {!product[0].carousel && (
+          {!product.carousel?.length && (
             <div className="image-container">
               <Image
-                src={product[0].image}
+                src={product.image}
                 fill
                 className="img view-img"
                 sizes="(min-width: 1000px) 640px, (min-width: 640px) 50vw, 100vw"
@@ -110,27 +122,24 @@ const Product = ({ product }: any) => {
             </div>
           )}
           <div className="description" style={{ marginTop: '3rem' }}>
-            <h2>{product[0].prod_name}</h2>
-            <p style={{ marginTop: '1rem' }}>{product[0].details}</p>
+            <h2>{product.name}</h2>
+            <p style={{ marginTop: '1rem' }}>{product.description}</p>
             <p style={{ marginTop: '1rem' }}>
               Price:{' '}
-              <b style={{ marginLeft: '0.5rem' }}> NGN {product[0].price}</b>
+              <b style={{ marginLeft: '0.5rem' }}> NGN {product.price}</b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
               Wholesale Price:{' '}
               <b style={{ marginLeft: '0.5rem' }}>
-                NGN {product[0].whole_sale}
+                NGN {product.wholesale_price}
               </b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
               Bulk Price:{' '}
-              <b style={{ marginLeft: '0.5rem' }}>
-                {' '}
-                NGN {product[0].bulk_price}
-              </b>
+              <b style={{ marginLeft: '0.5rem' }}> NGN {product.bulk_price}</b>
             </p>
             <p style={{ marginTop: '0.5rem' }}>
-              Dimensions : {product[0].dimensions}
+              Dimensions : {product.dimensions}
             </p>
             <p style={{ marginTop: '0.5rem' }}>
               Minimum Order Quantity(Bulk) : 30pcs and above

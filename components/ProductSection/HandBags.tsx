@@ -8,14 +8,14 @@ import { useContext } from 'react'
 const HandBags = () => {
   const { allProducts } = useContext(Context)
   const products = allProducts
-    .filter((product) => product.prod_section == 'hand_bags')
+    .filter((product) => product.category == 'hand bags')
     .map((product) => (
       <Product
         key={product.id}
         id={product.id}
-        name={product.prod_name}
+        name={product.name}
         image={product.image}
-        bottom={product.bottom}
+        bottom={product.top_position}
       />
     ))
     .slice(0, 10)
